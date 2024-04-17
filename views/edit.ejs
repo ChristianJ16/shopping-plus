@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h1>Edit Item Page</h1>
+  <nav>
+    <a href="/shopping">Back to Shopping List</a>
+  </nav>
+  <form action="/shopping/<%=shopping.id%>?_method=PUT" method="POST">
+    Name: <input type="text" name="name" value="<%=shopping.name%>"/><br/>
+    Description: <input type="text" name="description" value="<%=shopping.description%>"/><br/>
+    Image Link: <input type="text" name="img" value="<%=shopping.img%>"/><br/>
+    Quantity: <input type="number" name="qty" value="<%=shopping.qty%>"/><br/>
+    Price: <input type="number" name="price" value="<%=shopping.price%>"/><br/>
+    <input type="submit" name="" value="Submit Changes"/>
+  </form>
+</body>
+</html>

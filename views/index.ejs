@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h1>Shopping Index Page</h1>
+  <nav>
+    <a href="/shopping/new">Create a New Item</a>
+  </nav>
+  <ul>
+    <% for(let i = 0; i < shoppings.length; i++) { %>
+      <li>
+      <a href="/shopping/<%=shoppings[i]._id%>">
+      <%=shoppings[i].name%>
+      </a><br/>
+      <img class="images" src="<%=shoppings[i].img%>">
+    </li>
+    <% } %>
+  </ul>
+</body>
+</html>

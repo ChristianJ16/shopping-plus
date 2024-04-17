@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <nav>
+  <a href="/shopping">Back to Shopping List</a>
+</nav>
+  <h1><%=shopping.name%></h1>
+  <img class="images" src="<%=shopping.img%>">
+  <p><%=shopping.description%></p>
+  <p>price: $<%=shopping.price%></p>
+  <form action="/shopping/<%=shopping.id%>?_method=DELETE" method="POST">
+  <input type="submit" class="button" value="Delete">
+  </form>
+  <a href="/shopping/<%=shopping.id%>/edit">Edit Product</a>
+</body>
+</html>
