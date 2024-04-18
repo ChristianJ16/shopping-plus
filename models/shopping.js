@@ -5,7 +5,8 @@ const shoppingSchema = new mongoose.Schema({
   description: String,
   img: String,
   qty: {type: Number, required: true},
-  price: Number
+  price: Number,
+  alreadyGot: Boolean
 })
 
 const Shopping = mongoose.model('Shopping', shoppingSchema)

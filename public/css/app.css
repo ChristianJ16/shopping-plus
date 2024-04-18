@@ -1,0 +1,82 @@
+body {
+  background-image: url(https://img.freepik.com/free-photo/painted-solid-concrete-wall-textured-background_53876-101638.jpg?w=900&t=st=1713474419~exp=1713475019~hmac=31933b62ae1b676499c9fabeb757696f0158e38965c7659a1875e7c965b65c5e);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.images {
+  width: 100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Fredericka the Great", serif;
+  color: white;
+}
+
+.list{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+button {
+font-size: 20px;
+background-color: white;
+padding:10px 15px;
+color: black;
+border:2px solid black;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none; 
+  color: black;
+}
+
+/* a:visited {
+  color: black;
+} */
+
+a:hover {
+  color: black;
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  text-decoration: none; 
+  font-size: 20px;
+  color: black;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Fredericka the Great", serif;
+  font-size: 25px;
+  list-style-type: none;
+}
+
+.architects-daughter-regular {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}

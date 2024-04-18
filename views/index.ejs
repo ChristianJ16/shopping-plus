@@ -4,21 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Shopping Index Page</h1>
-  <nav>
-    <a href="/shopping/new">Create a New Item</a>
-  </nav>
+  <div class="title">
+  <h1>Shopping+</h1>
+</div>
   <ul>
     <% for(let i = 0; i < shoppings.length; i++) { %>
       <li>
-      <a href="/shopping/<%=shoppings[i]._id%>">
-      <%=shoppings[i].name%>
-      </a><br/>
-      <img class="images" src="<%=shoppings[i].img%>">
+      <% if(shoppings[i].alreadyGot) { %>
+        <strike><a class ="list" href="/shopping/<%=shoppings[i]._id%>">
+          <%=shoppings[i].name%></strike>
+     <% } else {%>
+      <a class ="list" href="/shopping/<%=shoppings[i]._id%>">
+        <%=shoppings[i].name%>
+    <% } %>
     </li>
     <% } %>
   </ul>
+<div class="create">
+  <button><a href="/shopping/new">Add Item</a></button>
+</div>
 </body>
 </html>

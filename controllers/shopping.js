@@ -27,6 +27,7 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   console.log(req.body)
+  req.body.alreadyGot = req.body.alreadyGot ? true : false
   console.log('POST REQUEST MADE WITH: ', req.body)
   try {
     const newShopping = await Shopping.create(req.body)
@@ -48,6 +49,7 @@ router.get('/:id/edit', async (req, res) => {
 //PUT
 router.put('/:id', async (req, res) => {
   try {
+    req.body.alreadyGot === 'on' ? req.body.alreadyGot = true : req.body.alreadyGot = false
   const updatedShopping = await Shopping.findByIdAndUpdate(req.params.id, req.body, {new: true})
   console.log(updatedShopping)
   res.redirect('/shopping/' + updatedShopping.id)

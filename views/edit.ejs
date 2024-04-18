@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>Edit Item Page</h1>
@@ -15,6 +22,8 @@
     Image Link: <input type="text" name="img" value="<%=shopping.img%>"/><br/>
     Quantity: <input type="number" name="qty" value="<%=shopping.qty%>"/><br/>
     Price: <input type="number" name="price" value="<%=shopping.price%>"/><br/>
+    Grabbed item: <input type="checkbox" name="alreadyGot"
+      <%= shopping.alreadyGot ? 'checked' : 'unchecked' %>/><br/>
     <input type="submit" name="" value="Submit Changes"/>
   </form>
 </body>
