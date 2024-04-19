@@ -1,8 +1,8 @@
-What is the Project I made?
-I made an app called "Shopping+", which is an online shopping list you can use so you don't forget any items while you're out on your errand runs.
+What is the Project I made?:
+- I made an app called "Shopping+", which is an online shopping list you can use so you don't forget any items while you're out on your errand runs.
 
 Technologies Used:
-HTML, CSS, JavaScript, Mongoose, Express, dotenv, methode-override, and ejs.
+- HTML, CSS, JavaScript, Mongoose, Express, dotenv, methode-override, and ejs.
 
 Approach Taken:
 - Start by laying out my ideas with a wireframe
