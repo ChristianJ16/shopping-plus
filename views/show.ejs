@@ -15,18 +15,29 @@
   <nav>
   <a href="/shopping">Back to Shopping List</a>
 </nav>
+<div class="align">
+<div class="list1">
   <h1><%=shopping.name%></h1>
+</div>
   <img class="images" src="<%=shopping.img%>">
-  <p><%=shopping.description%></p>
-  <p>price: $<%=shopping.price%></p>
+  <p class="text">Notes: <%=shopping.description%></p>
+  <p class="text">Price: $<%=shopping.price%></p>
+  <p class="text">Quantity: <%=shopping.qty%></p>
+  <div class="text">
   <% if(shopping.alreadyGot === true){ %>
     Item grabbed
   <% } else { %>
     Item not grabbed
  <% } %>
+</div>
+<div class="delete">
   <form action="/shopping/<%=shopping.id%>?_method=DELETE" method="POST">
   <input type="submit" class="button" value="Delete">
   </form>
-  <a href="/shopping/<%=shopping.id%>/edit">Edit Product</a>
+</div>
+</div>
+<button>
+  <a class="create" href="/shopping/<%=shopping.id%>/edit">Edit Product</a>
+</button>
 </body>
 </html>
