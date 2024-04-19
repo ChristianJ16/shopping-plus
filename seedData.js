@@ -4,7 +4,7 @@ const shoppingSeed = [
     description: "",
     img: "https://www.vlasic.com/sites/g/files/qyyrlu671/files/images/products/kosher-dill-wholes-77287.png",
     qty: 1,
-    price: "",
+    price: 3,
     alreadyGot: false
   } ,
   {
@@ -12,7 +12,7 @@ const shoppingSeed = [
     description: "strawberry",
     img: "https://target.scene7.com/is/image/Target/GUEST_f22db326-9521-455c-850a-aea983087fbb?wid=488&hei=488&fmt=pjpeg",
     qty: 1,
-    price: "",
+    price: 80,
     alreadyGot: true
   } ,
   {
@@ -33,10 +33,10 @@ const shoppingSeed = [
   } ,
   {
     name: "Bread",
-    description: "",
+    description: "Get white bread!",
     img: "https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/16:9/w_4000,h_2250,c_limit/milk-bread.jpg",
-    qty: 100,
-    price: "",
+    qty: 5,
+    price: 25,
     alreadyGot: false
   }
 ]
