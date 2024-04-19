@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Shopping = require('../models/shopping.js')
 const methodOverride = require('method-override')
+const shoppingSeed = require('../seedData.js')
 
 router.use(methodOverride('_method'))
 
@@ -15,6 +16,12 @@ router.get('/', async (req, res) => {
 // New
 router.get('/new', (req, res) => {
   res.render('newShopping.ejs')
+})
+
+// Seed
+router.get('/seed', async (req, res) => {
+  const shoppings = await Shopping.create(shoppingSeed)
+  res.redirect('/shopping')
 })
 
 // Show
